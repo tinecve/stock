@@ -29,7 +29,7 @@ public class CategoryRestControllerAdapter {
     }
 
     @GetMapping("/")
-    public ResponseEntity<List<CategoryResponse>> getAllCategories(@RequestParam Integer page, @RequestParam Integer size, @RequestParam String order){
+    public ResponseEntity<List<CategoryResponse>> getAllCategories(@RequestParam Integer page, @RequestParam Integer size, @RequestParam(required = false) String order){
         return ResponseEntity.ok(categoryResponseMapper.toCategoryResponseList(categoryServicePort.getAllCategories(page, size, order)));
     }
 
