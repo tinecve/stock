@@ -11,6 +11,6 @@ public interface ICategoryResponseMapper {
 
     CategoryResponse toCategoryResponse(Category category);
 
-    List<CategoryResponse> toCategoryResponse(List<Category> categories);
+    List<CategoryResponse> toCategoryResponseList(List<Category> categories);
 
 }

@@ -27,4 +27,6 @@ public class BeanConfiguration {
         return new CategoryUseCase(categoryPersistencePort());
     }
 
+
+
 }
