@@ -16,7 +16,7 @@ public class AddBrandRequest {
     private final String name;
     @NotNull(message = "Field description cannot be null")
     @NotBlank(message = "Field description cannot be blank")
-    @Size(max = 90, message = "Field description cannot be less than 90 characters")
+    @Size(max = 120, message = "Field description cannot be less than 90 characters")
     private final String description;
 
 }

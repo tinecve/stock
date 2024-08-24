@@ -28,8 +28,8 @@ public class Category {
         }
 
         this.id = id;
-        this.name = requireNonNull(name, DomainConstants.FIELD_NAME_NULL_MESSAGE);
-        this.description = requireNonNull(description, DomainConstants.FIELD_DESCRIPTION_NULL_MESSAGE);
+        this.name = requireNonNull(name, DomainConstants.FIELD_CATEGORY_NAME_NULL_MESSAGE);
+        this.description = requireNonNull(description, DomainConstants.FIELD_CATEGORY_DESCRIPTION_NULL_MESSAGE);
     }
 
     public Long getId() {

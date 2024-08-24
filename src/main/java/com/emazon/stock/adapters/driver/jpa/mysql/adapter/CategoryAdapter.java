@@ -33,7 +33,7 @@ public class CategoryAdapter implements ICategoryPersistencePort {
             if(order.equals("asc")) {
                 categories = categoryRepository.findAllByOrderByNameAsc(pagination).getContent();
             } else if(order.equals("desc")){
-                categories = categoryRepository.findAllByOrderByNameAsc(pagination).getContent();
+                categories = categoryRepository.findAllByOrderByNameDesc(pagination).getContent();
             } else{
                 categories = categoryRepository.findAll(pagination).getContent();
             }
